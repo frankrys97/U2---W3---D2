@@ -46,7 +46,7 @@ const userMemory = document.querySelector("#userMemory");
 // Per mostrare il contenuto del localStorage all'h3 sopra al nostro input
 // ad ogni avvio della pagina e per far partire il contatore
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
     startCounter();
   if (savedUser) {
     userMemory.innerHTML = `Sei loggato come ${savedUser}`;
