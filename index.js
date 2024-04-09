@@ -74,6 +74,8 @@ const startCounter = () => {
   } else {
     count = 0;
   }
+  counter.innerHTML = formatCount(count);
+
 
   // Creo una funzione setInterval che ad ogni 1000 millisecondi, quindi un secondo,
   // incrementa il contatore e lo salva in session storage
